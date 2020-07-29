@@ -5,14 +5,17 @@
 	<title>Document</title>
 	<link rel="stylesheet" type="text/css" href="styles/style.css">
 	<script type="text/javascript" src="scripts/script.js" async></script>
+	
 </head>
 <body>
 	<section class="top-banner">
   <div class="container">
     <h1 class="heading">Find out about the Weather?</h1>
-    <form>
-      <input type="text" placeholder="Search for a city" autofocus>
-      <button type="submit">Time to go out?</button>
+    <form autocomplete="off">
+    	<div class="autocomplete">
+     	<input type="text" id="myInput" placeholder="Search for a city" autofocus>
+		<button id="sendbutton" type="submit">Time to go out?</button>
+      	</div>
       <span class="msg"></span>
     </form>
   </div>
